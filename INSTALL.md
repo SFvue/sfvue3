@@ -17,14 +17,14 @@
 
     python manage.py syncdb
 
-5. It will ask you to provide username, email and password. Give them and run following migrations:
+5. It will ask us to provide username, email and password. Give them and run following migrations:
 
     python manage.py migrate guardian
     python manage.py migrate resources
     python manage.py migrate profiles
 
-5. Run django server and go to [http://127.0.0.1:8000/admin/](http://127.0.0.1:8000/admin/)
+5. Run django server and go to [http://127.0.0.1:8000/admin/](http://127.0.0.1:8000/admin/) (dev only)
 
-6. Create Resource Types named Book, Ebook, Tutorial, Online Course, Other.
+6. Create Resource Types.
 
 7. Go to home page.
