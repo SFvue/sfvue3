@@ -27,4 +27,3 @@
 
 6. Create Resource Types.
 
-7. Go to home page.
