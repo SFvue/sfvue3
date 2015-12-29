@@ -13,6 +13,8 @@
 3. This will create a virtual environment and activate it. Now use pip to install dependencies with:
 
     pip install -r dev-requirements.txt
+    
+    (note) May need to install postgresql-server, postgresql-devel
 
 4. Now we have to prepare a database:
 
