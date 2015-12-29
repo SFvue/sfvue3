@@ -3,6 +3,7 @@
 *Make sure you have Python 2.7.6, virtualenv, pip and sqlite3 installed*
 
 1. Download or clone this repo.
+
 2. Go to project home folder and run these commands:
 
     cp sfvue/example_local.py sfvue/local_settings.py
@@ -26,4 +27,7 @@
 5. Run django server and go to [http://127.0.0.1:8000/admin/](http://127.0.0.1:8000/admin/) (dev only)
 
 6. Create Resource Types.
+
+7. To access MySQL from local machine : ssh -L 9001:localhost:80 -l sfvue 45.79.90.218
+   Use localhost:9001/phpmyadmin 
 
