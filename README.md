@@ -36,8 +36,8 @@ We are developing knowledge library for learning San Francisco. The best resourc
 
 ##Install
 
-See INSTALL.md for full installation instructions.
-http://www.sfvue.com
++ See INSTALL.md for full installation instructions.
++ http://www.sfvue.com
 
 
 ## Contact
