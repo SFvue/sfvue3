@@ -1,21 +1,21 @@
 #sfvue
 ----
 
-We are developing knowledge library for learning programming. The best resources to learn something(related to computer science) on the web are scattered and newcomers waste lot of time to go through choices of tools, then where to learn and all. We aim to elinimate this by recommending beginners the best resource for a tool or language. And who will decide which is best, its the users themselves(plus some AI behind the door).
+We are developing knowledge library for learning San Francisco. The best resources to learn something on the web are scattered and we may waste lot of time. We aim to elinimate this by recommending the best resources.
 
 ##Version 1 features
 
-+ Users can share any link of interesting blog post or video or tutorial in the Resource Section.
-+ Resources are divided in topics around 3 levels(beginner, intermediate, advanced).
++ Users can share any link of interesting blog post or video in the Resource Section.
++ Resources are divided in topics.
 + Users can share snippets(a shorte blog post) on their wall to share their views and experiences in learning.
 + Users can save interesting resources to their profile for later use.
 + Topic follow button allow users to follow topics to get interesting news, new resources.
-+ Explore section lets view the ongoind activity of the site at a glance.
++ Explore section lets view the ongoing activity of the site at a glance.
 
 ##Later features
 
 + Moderators and more active users will be able to edit wiki like content in the topics and resources.
-+ Tracks will be introduced to give teachers/tutors ability to create content for the their students and distribute them.
++ Tracks will be introduced to give users ability to create content for the their audiences and distribute them.
 + Users can follow other interesting users.
 
 
@@ -38,16 +38,10 @@ We are developing knowledge library for learning programming. The best resources
 
 See INSTALL.md for full installation instructions.
 
-## Contributors
 
-+ [Karambir Singh Nain](http://nainomics.in/)
-+ [Mohammad Adil](http://madil.in/)
-+ [Mayank Jain](http://mayank-jain.in/)
+## Contact
 
-## We need your help
-
-+ We need Django developers for this project.
-+ None of us are a designer, if you can help or know someone who can, please [mail us](mailto:akarambir@gmail.com).
++ [mail us](mailto:contact.sfvue@gmail.com).
 
 ## LICENSE
 
