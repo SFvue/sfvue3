@@ -50,5 +50,5 @@ This project is licensed under [MIT License](http://mit-license.org). See LICENS
 
 ## Note
 
-+ djangoratings-vote : ip-address width = 64
-+ discus comment tool requires registration.
++ djangoratings-vote : ip-address width = 64. Otherwise, we get the following error: Data truncated for column 'ip_address' at row 1
++ discus comment tool requires registration. 
