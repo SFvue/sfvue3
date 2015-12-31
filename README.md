@@ -47,3 +47,8 @@ We are developing knowledge library for learning San Francisco. The best resourc
 ## LICENSE
 
 This project is licensed under [MIT License](http://mit-license.org). See LICENSE.txt
+
+## Note
+
++ djangoratings-vote : ip-address width = 64
++ discus comment tool requires registration.
