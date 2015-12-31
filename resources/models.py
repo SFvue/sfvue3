@@ -6,7 +6,7 @@ from django.core.urlresolvers import reverse
 from sfvue.utils import unique_slugify
 from django.template.defaultfilters import slugify
 
-LEVELS = ['beginner', 'intermediate', 'advanced']
+LEVELS = ['introductory', 'intermediate', 'in-depth']
 
 class Topic(models.Model):
     name = models.CharField(max_length=60, unique=True)
@@ -56,7 +56,7 @@ class Resource(models.Model):
     help_text = models.CharField(max_length=255, null=True, blank=True)
     description = models.TextField(null=True, blank=True, default='')
     resource_type = models.ForeignKey(ResourceType)
-    level = models.CharField('Difficulty Level', max_length=30, choices=zip(LEVELS, LEVELS))
+    level = models.CharField('Level of depth', max_length=30, choices=zip(LEVELS, LEVELS))
     topics = models.ManyToManyField(Topic)
     created_by = models.ForeignKey(User)
     rating = RatingField(range=5, weight=10, use_cookies=True, allow_delete=True)
