@@ -2,6 +2,8 @@ from django.conf.urls import patterns, include, url
 from django.contrib import admin
 admin.autodiscover()
 
+from django.conf import settings
+
 from resources.models import Resource, Topic
 from profiles.models import UserProfile
 
@@ -27,13 +29,14 @@ urlpatterns += patterns('',
     url(r'^resource/', include('resources.urls')),
     url(r'^profile/', include('profiles.urls')),
     url(r'^search/', include('haystack.urls')),
+    url(r'^media/(?P<path>.*)$', 'django.views.static.serve', {
+            'document_root': settings.MEDIA_ROOT,
+   }),
 )
-
 
 urlpatterns += patterns('',
     (r'^sitemap\.xml$', 'django.contrib.sitemaps.views.sitemap', {'sitemaps': sitemaps}),
 )
-
 
 urlpatterns += patterns('django.contrib.flatpages.views',
     url(r'^about/$', 'flatpage', {'url': '/about/'}, name='page_about'),
