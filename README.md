@@ -52,7 +52,4 @@ This project is licensed under [MIT License](http://mit-license.org). See LICENS
 
 + djangoratings-vote : ip-address width = 64. Otherwise, we get the following error: Data truncated for column 'ip_address' at row 1
 + discus comment tool requires registration. 
-
-## Help needed
-
-Updating to version 1.7 or 1.8 - I have couple of issues to make it work.
++ Upgraded to Django 1.8.7 on Jan. 2, 2015 (2 fixes - 1. Import user after loading app, 2. NoReverseMatch for admin delete)
