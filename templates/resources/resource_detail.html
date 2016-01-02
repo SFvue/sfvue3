@@ -47,11 +47,9 @@
                     <div class="span8 offset2">
                         <table class="table table-bordered table-stripped">
                             <tbody> {% with approval=resource.rating.get_real_rating %}
-                                <!--
                                 <tr class="{% if approval >= 3 %}success{% endif %}">
                                     <td>Rating</td> <td>{{ approval|floatformat }}/5</td>
                                 </tr>{% endwith %}
-                                -->
                                 <tr>
                                     <td>Resource Type</td> <td>{{ resource.resource_type }}</td>
                                 </tr>
