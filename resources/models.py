@@ -55,8 +55,10 @@ class Resource(models.Model):
     url = models.URLField(unique=True)
     help_text = models.CharField(max_length=255, null=True, blank=True)
     description = models.TextField(null=True, blank=True, default='')
-    resource_type = models.ForeignKey(ResourceType)
-    level = models.CharField('Level of depth', max_length=30, choices=zip(LEVELS, LEVELS))
+    DEFAULT_RESOURCE_TYPE_ID=2
+    resource_type = models.ForeignKey(ResourceType, default=DEFAULT_RESOURCE_TYPE_ID)
+    CHOICES=zip(LEVELS,LEVELS)
+    level = models.CharField('Level of depth', max_length=30, choices=CHOICES, blank=True, default=CHOICES[0][0])
     topics = models.ManyToManyField(Topic)
     created_by = models.ForeignKey(User)
     rating = RatingField(range=5, weight=10, use_cookies=True, allow_delete=True)
