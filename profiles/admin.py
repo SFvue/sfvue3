@@ -3,7 +3,8 @@ from .models import UserProfile, Project, SavedResource, TopicFollow
 
 class UserProfileAdmin(admin.ModelAdmin):
     list_display = ('user', 'receive_email',)
-    search_fields = ('user', 'bio', 'gravatar_email', 'twitter', 'stackoverflow', 'facebook', 'website', 'receive_email')
+    #search_fields = ('user', 'bio', 'gravatar_email', 'twitter', 'stackoverflow', 'facebook', 'website', 'receive_email')
+    search_fields = ('user', 'bio', 'gravatar_email', 'twitter', 'facebook', 'website', 'receive_email')
 
 
 class SavedResourceAdmin(admin.ModelAdmin):

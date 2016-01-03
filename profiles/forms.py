@@ -12,7 +12,8 @@ class UserUpdateForm(ModelForm):
 class UserProfileUpdateForm(ModelForm):
     class Meta:
         model = UserProfile
-        fields = ('github', 'twitter', 'stackoverflow', 'facebook', 'website', 'gravatar_email', 'bio')
+        #fields = ('github', 'twitter', 'stackoverflow', 'facebook', 'website', 'gravatar_email', 'bio')
+        fields = ('github', 'twitter', 'facebook', 'website', 'gravatar_email', 'bio')
 
 class ProjectCreateForm(ModelForm):
     class Meta:

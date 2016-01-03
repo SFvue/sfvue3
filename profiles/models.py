@@ -22,7 +22,7 @@ class UserProfile(models.Model):
     gravatar_email = models.EmailField(null=True, blank=True)
     github = models.CharField('Github Username', max_length=30, null=True, blank=True)
     twitter = models.CharField('Twitter Username', max_length=30, null=True, blank=True)
-    stackoverflow = models.CharField('Stackoverflow Profile', max_length=30, null=True, blank=True)
+    #stackoverflow = models.CharField('Stackoverflow Profile', max_length=30, null=True, blank=True)
     facebook = models.CharField('Facebook Username', max_length=30, null=True, blank=True)
     website = models.URLField('Your Website/Blog', null=True, blank=True)
     receive_email = models.BooleanField(default=True)
