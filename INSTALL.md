@@ -27,6 +27,7 @@
     python manage.py migrate profiles
 
 5. Run django server and go to [http://127.0.0.1:8000/admin/](http://127.0.0.1:8000/admin/) (dev only)
+For production, here is the Apache setup guide: http://bogotobogo.com/python/Django/Python_Django_tutorial_sfvue_site_1_Introduction_virtualenv_dev_and_production_with_Apache.php
 
 6. Create Resource Types.
 
