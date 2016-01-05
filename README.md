@@ -1,4 +1,4 @@
-#sfvue
+#sfvue (http://sfvue.com)
 ----
 
 We are developing knowledge library for learning San Francisco. The best resources to learn something on the web are scattered and we may waste lot of time. We aim to elinimate this by recommending the best resources.
