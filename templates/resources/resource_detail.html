@@ -68,6 +68,10 @@
                                 <tr>
                                     <td>Date Submitted</td> <td>{{ resource.created_at|date:"D d M Y"  }}</td>
                                 </tr>
+                                                                <tr>
+                                <td>Thumb</td> 
+                                    <td><img src="{{ resource.thumbnail.url }}" alt="{{ resource.name }}" class="pull-right" /></td>
+                                </tr>
                             </tbody>
                         </table>
                     </div>
