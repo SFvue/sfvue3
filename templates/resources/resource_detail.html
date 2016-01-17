@@ -70,8 +70,29 @@
                                 </tr>
                                                                 <tr>
                                 <td>Thumb</td> 
-                                    <td><img src="{{ resource.thumbnail.url }}" alt="{{ resource.name }}" class="pull-right" /></td>
+                                    <td><img src="{{ resource.image_thumbnail.url }}" alt="{{ resource.name }}" class="pull-right" /></td>
                                 </tr>
+{% if resource.video_upload %}
+                                <tr>
+                                    <td>Video Upload</td>
+                                    <td>
+                                      <video width="640" height="480" controls>
+                                        <source src="{{ resource.video_upload.url }}" type="video/mp4">
+                                        <source src="{{ resource.video_upload.url }}" type="video/ogg">
+                                        Your browser does not support the video tag.
+                                      </video>
+                                    </td>
+                                </tr>
+                                {% endif %}
+                                {% if resource.video_embed %}
+                                <tr>
+                                    <td>Video Embed</td>
+                                    <td>
+                                      {{ resource.video_embed|safe }}
+                                    </td>
+                                </tr>
+                                {% endif %}
+
                             </tbody>
                         </table>
                     </div>
