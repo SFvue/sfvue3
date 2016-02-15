@@ -5,7 +5,6 @@
 {% load markdown_deux_tags %}
 
 {% block meta_description %}{{ resource.help_text }} - {{ resource.resource_type }} submitted by {{ resource.created_by }}{% endblock %}
-
 {% block content %}
 <div class="row-fluid">
     <div class="container">
@@ -68,10 +67,14 @@
                                 <tr>
                                     <td>Date Submitted</td> <td>{{ resource.created_at|date:"D d M Y"  }}</td>
                                 </tr>
-                                                                <tr>
-                                <td>Thumb</td> 
-                                    <td><img src="{{ resource.image_thumbnail.url }}" alt="{{ resource.name }}" class="pull-right" /></td>
+                                <tr>
+                                    <td>Thumbnail</td> 
+                                    {% if resource.image_thumbnail %} 
+                                    <td><img src="{{ resource.image_thumbnail.url }}" alt="{{ resource.name }}" class="pull-right" />
+                                    </td>
+                                    {% endif %}
                                 </tr>
+
 {% if resource.video_upload %}
                                 <tr>
                                     <td>Video Upload</td>
