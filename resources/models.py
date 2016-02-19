@@ -72,6 +72,8 @@ class Resource(models.Model):
     image_thumbnail5 = models.ImageField(upload_to='resources/%Y/%m/%d/', null=True, blank=True)
     video_upload = models.FileField(upload_to='resources/%Y/%m/%d/', null=True, blank=True)
     video_embed = models.CharField(max_length=255, null=True, blank=True)
+    video_embed2 = models.CharField(max_length=255, null=True, blank=True)
+    video_embed3 = models.CharField(max_length=255, null=True, blank=True)
 
 
     def __unicode__(self):

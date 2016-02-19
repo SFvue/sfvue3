@@ -111,7 +111,22 @@
                                     </td>
                                 </tr>
                                 {% endif %}
-
+                                {% if resource.video_embed2 %}
+                                <tr>
+                                    <td>Video Embed 2</td>
+                                    <td>
+                                      {{ resource.video_embed2|safe }}
+                                    </td>
+                                </tr>
+                                {% endif %}
+                                {% if resource.video_embed3 %}
+                                <tr>
+                                    <td>Video Embed 3</td>
+                                    <td>
+                                      {{ resource.video_embed3|safe }}
+                                    </td>
+                                </tr>
+                                {% endif %}
                             </tbody>
                         </table>
                     </div>
