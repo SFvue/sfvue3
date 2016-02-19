@@ -73,9 +73,25 @@
                                     <td><img src="{{ resource.image_thumbnail.url }}" alt="{{ resource.name }}" class="pull-right" />
                                     </td>
                                     {% endif %}
+                                    {% if resource.image_thumbnail2 %} 
+                                    <td><img src="{{ resource.image_thumbnail2.url }}" alt="{{ resource.name }}" class="pull-right" />
+                                    </td>
+                                    {% endif %}  
+                                    {% if resource.image_thumbnail3 %} 
+                                    <td><img src="{{ resource.image_thumbnail3.url }}" alt="{{ resource.name }}" class="pull-right" />
+                                    </td>
+                                    {% endif %}
+                                    {% if resource.image_thumbnail4 %} 
+                                    <td><img src="{{ resource.image_thumbnail4.url }}" alt="{{ resource.name }}" class="pull-right" />
+                                    </td>
+                                    {% endif %}     
+                                    {% if resource.image_thumbnail5 %} 
+                                    <td><img src="{{ resource.image_thumbnail5.url }}" alt="{{ resource.name }}" class="pull-right" />
+                                    </td>
+                                    {% endif %}
                                 </tr>
 
-{% if resource.video_upload %}
+                                {% if resource.video_upload %}
                                 <tr>
                                     <td>Video Upload</td>
                                     <td>
@@ -103,7 +119,7 @@
 
                 {% if resource.description %}
                 <div class="row-fluid markdown-text" id="resource-description">
-{{ resource.description|markdown:"safe" }}
+                    {{ resource.description|markdown:"safe" }}
                 </div>
                 {% endif %}
                 <div class="row-fluid">
