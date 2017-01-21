@@ -67,29 +67,41 @@
                                 <tr>
                                     <td>Date Submitted</td> <td>{{ resource.created_at|date:"D d M Y"  }}</td>
                                 </tr>
+                                {% if resource.image_thumbnail %} 
                                 <tr>
                                     <td>Thumbnail</td> 
-                                    {% if resource.image_thumbnail %} 
                                     <td><img src="{{ resource.image_thumbnail.url }}" alt="{{ resource.name }}" class="pull-right" />
                                     </td>
-                                    {% endif %}
-                                    {% if resource.image_thumbnail2 %} 
+                                </tr>
+                                {% endif %}
+                                {% if resource.image_thumbnail2 %} 
+                                <tr>
+                                    <td>Thumbnail 2</td> 
                                     <td><img src="{{ resource.image_thumbnail2.url }}" alt="{{ resource.name }}" class="pull-right" />
                                     </td>
-                                    {% endif %}  
-                                    {% if resource.image_thumbnail3 %} 
+                                </tr>
+                                {% endif %}  
+                                {% if resource.image_thumbnail3 %} 
+                                <tr>
+                                    <td>Thumbnail 3</td> 
                                     <td><img src="{{ resource.image_thumbnail3.url }}" alt="{{ resource.name }}" class="pull-right" />
                                     </td>
-                                    {% endif %}
-                                    {% if resource.image_thumbnail4 %} 
+                                </tr>
+                                {% endif %}
+                                {% if resource.image_thumbnail4 %} 
+                                <tr>
+                                    <td>Thumbnail 4</td> 
                                     <td><img src="{{ resource.image_thumbnail4.url }}" alt="{{ resource.name }}" class="pull-right" />
                                     </td>
-                                    {% endif %}     
-                                    {% if resource.image_thumbnail5 %} 
+                                </tr>
+                                {% endif %}     
+                                {% if resource.image_thumbnail5 %} 
+                                <tr>
+                                    <td>Thumbnail 5</td> 
                                     <td><img src="{{ resource.image_thumbnail5.url }}" alt="{{ resource.name }}" class="pull-right" />
                                     </td>
-                                    {% endif %}
                                 </tr>
+                                {% endif %}
 
                                 {% if resource.video_upload %}
                                 <tr>
@@ -141,7 +153,10 @@
                         {% disqus_show_comments %}
                 </div>
                             </div>
-                            <div class="span3 well" id="sidebar">{% include "resources/topics.html" %}</div>
+                            <div class="span3 well" id="sidebar">
+                                 {% include "resources/topics.html" %}
+                                 {% include "snippets/ads-side-skyscraper.html" %}
+                            </div>
         </div>
         {% endblock %}
     </div>
