@@ -217,7 +217,7 @@ class ResourceUpdateView(LoginRequiredMixin, PermissionRequiredMixin, SetHeadlin
 class TopicCreateView(SetHeadlineMixin, SidebarMixin, CreateView):
     form_class = TopicCreateForm
     template_name = 'resources/topic_form.html'
-    permission_required = 'resources.add_topic'
+    #permission_required = 'resources.add_topic'
     headline = 'Create New Topic'
 
 
